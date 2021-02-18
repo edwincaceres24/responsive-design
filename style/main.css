@@ -25,6 +25,9 @@ h1{
 }
 
 /*Header*/
+.bit-price{
+    background-color: var(--off-white);
+}
 .main-banner-text-p{
     font-size: 2.5rem;
     font-weight: 100;
@@ -93,6 +96,8 @@ header{
 }
 .button-icon-black{
     background-image: url("../assets/arrow-icon.svg");
+    background-repeat: no-repeat;
+
     display: inline-block;
     height: 2rem;
     width: 2rem;
@@ -122,4 +127,27 @@ header{
     margin-top:6rem;
     width: 250px;
     align-self: center;
+}
+.exchanges-title{
+    color: var(--bitcoin-orange);
+    font-size: 2rem;
+    margin: 1rem 1.5rem;
+}
+.exchanges-container{
+    display:grid;
+    border: 1px solid var(--off-white);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25% ;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    max-width: 500px;
+}
+.exchanges-column {
+    margin: 0.5rem 3rem;
+    color: var(--grey);
+    list-style: none;
+    font-size: 3.5rem;
+}
+.exchanges-column > li{
+    padding:1rem 0;
 }
