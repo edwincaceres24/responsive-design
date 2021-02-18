@@ -1,0 +1,125 @@
+:root{
+ --gradient-orange: (207.8deg, #201E1C 16.69%, #F7931A 100%);   
+--bitcoin-orange: #f7931a;
+--soft-orange: #FFE9D4;
+--secondary-blue: #1a9af7;
+--soft-blue: #e7f5ff;
+--warm-black: #201e1c;
+--black:#282623;
+--grey:#bababa;
+--off-white:#faf8f7;
+--just-white:#fff;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-size: 62.5%;
+    font-family: 'DM Sans';
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+
+/*Header*/
+.main-banner-text-p{
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--soft-orange);
+}
+header{
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+.main-section{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-container{
+    align-self: center;
+}
+.img-container > img{
+   
+    width: 200px;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+
+.main-banner-text{
+    align-self: center;
+    max-width: 900px;
+}
+.main-banner-text >  h1, .main-banner-text-p{
+    margin:  4rem 4rem;
+   
+    text-align: center;
+}
+
+.main-banner-text >  p{
+    margin-bottom: 3rem;
+}
+.main-button{
+    position: relative;
+    top:2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+
+}
+.main-button > button{
+    font-size: 1.75rem;
+    background-color: var(--just-white);
+    padding: 1rem 2rem;
+    box-shadow:  0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.main-button > button:focus{
+    outline: none;
+}
+.main-button > button:hover{
+    cursor: pointer;
+}
+.button-icon-black{
+    background-image: url("../assets/arrow-icon.svg");
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    align-self: center;
+}
+
+/*End Header*/
+
+.main-sheet-text {
+    align-self: center;
+    max-width: 900px;
+    
+}
+.section-title-h2{
+    font-size: 3rem;
+}
+.section-title-p{
+    font-size: 2rem;
+    color: var(--grey);
+}
+.main-sheet-text > .section-title-h2, .section-title-p{
+    margin:  4rem 4rem;
+    text-align: center;
+}
+
+.btc-img-container > img{
+    margin-top:6rem;
+    width: 250px;
+    align-self: center;
+}
