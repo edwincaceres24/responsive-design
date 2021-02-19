@@ -118,9 +118,13 @@ header{
     font-size: 2rem;
     color: var(--grey);
 }
-.main-sheet-text > .section-title-h2, .section-title-p{
+.section-container-text {
     margin:  4rem 4rem;
+}
+
+.section-title-h2, .section-title-p{
     text-align: center;
+    padding: 2rem 0;
 }
 
 .btc-img-container > img{
@@ -141,6 +145,7 @@ header{
     background-color: var(--just-white);
     border-radius: 15px;
     max-width: 500px;
+    margin-bottom: 5rem;
 }
 .exchanges-column {
     margin: 0.5rem 3rem;
@@ -148,6 +153,42 @@ header{
     list-style: none;
     font-size: 3.5rem;
 }
+
 .exchanges-column > li{
     padding:1rem 0;
+}
+/*Atributes section*/
+
+.attributes{
+    background-color: var(--warm-black);
+
+}
+.atribute-container-text{
+    margin: 0 0.5rem;
+}
+.white{
+    color:white;
+}
+
+.attribute-container-item{
+    background-color: #282623;
+    margin:0.75rem 4rem;
+    padding:1rem 2rem;
+    max-width: 600px;
+}
+.attribute-container-icon{
+    margin:0.25rem ;
+}
+
+.atribute-container-title{
+    font-size: 2rem;
+    margin:0.5rem 0.5rem;
+}
+.atribute-container-text{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size:1.5rem;
+    color: var(--grey);
 }
