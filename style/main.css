@@ -112,10 +112,11 @@ header{
     
 }
 .section-title-h2{
-    font-size: 3rem;
+    font-size: 2.4rem;
+    margin:0 1rem;
 }
 .section-title-p{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--grey);
 }
 .section-container-text {
@@ -169,12 +170,30 @@ header{
 .white{
     color:white;
 }
-
+.main-atribut-container-cart{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
 .attribute-container-item{
     background-color: #282623;
     margin:0.75rem 4rem;
     padding:1rem 2rem;
-    max-width: 600px;
+    max-width: 450px;
+}
+@media screen and (min-width: 650px){
+    .main-atribut-container-cart{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1100px;
+    }
+    .attribute-container-item{
+        margin:1rem 1rem;
+        padding:1rem 2rem;
+
+    }
 }
 .attribute-container-icon{
     margin:0.25rem ;
@@ -191,4 +210,143 @@ header{
     margin-right: 0.5rem;
     font-size:1.5rem;
     color: var(--grey);
+}
+
+/*Image container*/
+.main-plan-container{
+    padding: 5rem 0;
+}
+.main-pricing-container > picture > h2{
+    position: absolute;
+    text-align: center;
+    margin-top:5rem;
+    width: 100%;
+}
+.bitcoin-img{
+    width: 100%;
+    height: auto;
+}
+.price-container{
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    background: var(--just-white);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 0.5rem 1.25rem;
+}
+
+.price-recommended-tag{
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: var(--off-white);
+    border-radius: 8px;
+    position: absolute;
+    bottom: 21rem;
+    left: calc(50% - 50px);
+}
+.price-container-info{
+    margin-top:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price-container-info > *{
+    text-align: center;
+    margin-top: 1rem;
+}
+.price-container-currency-amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.25rem 0;
+}
+.price-currency{
+    font-size: 1.2rem;
+}
+.price-info-label{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+.price-info-amount{
+    font-size: 5.2rem;
+    line-height: 6.25rem;
+    letter-spacing:-0.08em;
+    font-weight: bold;
+    font-family: Inter;
+}
+
+.price-info-p{
+    font-size: 1.2rem;
+    color:#757575;
+}
+.price-info-btn{
+    margin: 1.25rem 0;
+    background: var(--off-white);
+
+    border: 2px solid var(--bitcoin-orange);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding: 0.75rem 0;
+    vertical-align: baseline;
+}
+.arrow-orange-icon{
+    background-image: url("/assets/arrow-right-orange.svg");
+    height: 2.4rem;
+    width: 2.4rem;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: cover;
+}
+@media screen and (min-width: 1100px){
+    .main-pricing-container > picture > h2{
+        position: absolute;
+        text-align: center;
+        margin:25rem 0;
+        width: 100%;
+        font-size: 6rem;
+    }
+}
+/*Footer*/
+footer{
+    background-color: var(--bitcoin-orange);
+}
+.footer-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+
+}
+.footer-main-container > *{
+    margin: 0 4rem;
+}
+.footer-social-media{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.footer-social-media>li{
+    margin:1rem 0;
+    list-style: none;
+    font-size: 1.25rem;
+    color: var(--just-white);
+}
+.footer-logo{
+    width: 100px;
+}
+@media screen and (min-width: 650px){
+    .footer-social-media>li {
+        font-size: 1.75rem;
+    }
 }
