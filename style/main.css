@@ -237,12 +237,20 @@ header{
 }
 .price-main-container-plans{
     display: flex;
-    justify-content: center;
     height: 316px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     align-items: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+@media screen and (min-width: 650px){
+    .price-main-container-plans{
+        display: flex;
+        justify-content: center;
+        
+    }
 }
 .price-container{
     scroll-snap-align: center;
@@ -254,8 +262,9 @@ header{
     flex-direction: column;
     min-width: 190px;
     max-width: 230px;
-    max-height: 247px;;
+    max-height: 247px;
     padding: 0.5rem 1.25rem;
+
 }
 
 .price-main-container-plans article{
@@ -342,6 +351,7 @@ header{
         width: 100%;
         font-size: 6rem;
     }
+    
 }
 /*Footer*/
 footer{
