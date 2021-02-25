@@ -10,6 +10,11 @@
 --off-white:#faf8f7;
 --just-white:#fff;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -79,14 +84,18 @@ header{
 
 }
 .main-button > button{
-    font-size: 1.75rem;
     background-color: var(--just-white);
     padding: 1rem 2rem;
     box-shadow:  0px 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: 4px;
     border: none;
+}
+.maint-btn-text{
     text-transform: capitalize;
+    font-size: 1.75rem;
+    text-decoration: none;
     font-weight: bold;
+    color: var(--black);
 }
 .main-button > button:focus{
     outline: none;
@@ -120,7 +129,7 @@ header{
     color: var(--grey);
 }
 .section-container-text {
-    margin:  4rem 4rem;
+    margin:  1.5rem 4rem;
 }
 
 .section-title-h2, .section-title-p{
@@ -226,17 +235,35 @@ header{
     width: 100%;
     height: auto;
 }
+.price-main-container-plans{
+    display: flex;
+    justify-content: center;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    align-items: center;
+}
 .price-container{
+    scroll-snap-align: center;
     position: relative;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     background: var(--just-white);
     display: flex;
     flex-direction: column;
-    width: 200px;
+    min-width: 190px;
+    max-width: 230px;
+    max-height: 247px;;
     padding: 0.5rem 1.25rem;
 }
 
+.price-main-container-plans article{
+    margin: 0 1rem;
+}
+.price-main-container-plans article:hover{
+    cursor: pointer;
+}
 .price-recommended-tag{
     background-color: orange;
     padding: 0.5rem 1rem;
@@ -246,6 +273,7 @@ header{
     position: absolute;
     bottom: 21rem;
     left: calc(50% - 50px);
+    bottom: calc(95% - 2px);
 }
 .price-container-info{
     margin-top:2rem;
@@ -283,9 +311,9 @@ header{
     color:#757575;
 }
 .price-info-btn{
-    margin: 1.25rem 0;
+    margin: 1.25rem auto;
     background: var(--off-white);
-
+    width: 151px;
     border: 2px solid var(--bitcoin-orange);
     box-sizing: border-box;
     border-radius: 4px;
@@ -297,14 +325,14 @@ header{
     text-align: center;
     padding: 0.75rem 0;
     vertical-align: baseline;
+    cursor: pointer;
 }
 .arrow-orange-icon{
     background-image: url("../assets/arrow-right-orange.svg");
     height: 2.4rem;
     width: 2.4rem;
-    background-repeat: no-repeat;
     display: inline-block;
-    background-size: cover;
+    vertical-align: middle;
 }
 @media screen and (min-width: 1100px){
     .main-pricing-container > picture > h2{
